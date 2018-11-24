@@ -1,12 +1,12 @@
 package main
 
 import (
+	"crypto/tls"
 	"io"
 	"log"
 	"net"
 	"net/http"
 	"time"
-	"tls"
 )
 
 func CopyResHeader(w, res http.Header){
